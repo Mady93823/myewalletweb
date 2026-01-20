@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+
+# User requested to ignore tests directory
+tests/
+testdb.py
+check_db.py
+
+# IDE
+.vscode/
+.idea/
