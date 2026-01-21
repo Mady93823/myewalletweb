@@ -1,6 +1,6 @@
 # MyEWallet Bot
 
-A Python Telegram bot for MyEWallet.ai with user management, broadcasting, and website integration.
+A Python Telegram bot for myewallet.global with user management, broadcasting, and website integration.
 
 ## Features
 

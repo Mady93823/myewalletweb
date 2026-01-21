@@ -6,7 +6,7 @@ import os
 import asyncio
 
 WELCOME_TEXT = """
-🚀 <b>Welcome to MyEWallet.ai!</b>
+🚀 <b>Welcome to myewallet.global!</b>
 
 Your gateway to intelligent finance. Experience the future of digital asset management with AI-driven insights and secure transactions.
 
@@ -30,7 +30,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     try:
         await context.bot.set_chat_menu_button(
             chat_id=update.effective_chat.id,
-            menu_button=MenuButtonWebApp(text="Open App", web_app=WebAppInfo(url="https://myewallet.ai/"))
+            menu_button=MenuButtonWebApp(text="Open App", web_app=WebAppInfo(url="https://myewallet.global/"))
         )
     except Exception as e:
         # Log error but don't stop the welcome flow
@@ -38,7 +38,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     # Prepare the welcome message
     keyboard = [
-        [InlineKeyboardButton("Open Wallet 🌐", web_app=WebAppInfo(url="https://myewallet.ai/"))]
+        [InlineKeyboardButton("Open Wallet 🌐", web_app=WebAppInfo(url="https://myewallet.global/"))]
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
 
